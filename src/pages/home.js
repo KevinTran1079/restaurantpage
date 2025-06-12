@@ -1,6 +1,6 @@
 
 import coffee_bg from "../images/coffee-bg.jpg";
-import './home.css';
+import './styles.css';
 
 const createHome = () => {
     const content = document.getElementById("content");
