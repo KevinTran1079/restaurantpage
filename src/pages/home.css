@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(../images/coffee-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.header-logo{
+    color: white;
+    margin-left: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;  /* This centers items vertically */
+    text-align: center;
+    justify-content: left;
+    gap: 30px;
+    height: 100px;  /* Add a specific height to your navbar */
+}
+
+button{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+}
+
+#content, .menuContainer {
+    display: flex;
+    min-height: 50vh;
+    width: 100%;
+}
+
+.home-content{
+    align-items: center;
+    justify-content: left;
+    margin: 0 30px;
+    font-size: 2rem;
+    background: linear-gradient(to right, #8B4513, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    color: #f5f5f5;  /* Light color for visibility */
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+}
+
+.menuContainer{
+    flex-direction: column;
+    margin: 0 30px;
+    min-height: auto;
+}
+
+.foodHeader{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.drinkContainer {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 100%;  /* Take full width of parent */
+    gap: 20px;    /* Add space between items */
+    flex: 1
+}
+
+.drinks,
+.eveningSnacks,
+.eveningDrinks {
+    font-size: 1.5rem;
+    font-weight: 500;
+    flex: 1;      /* Makes each child take equal width */
+    text-align: left;
+}
+
+ul{
+    list-style-type: none;
+    font-size: 1rem;
+    padding: 0;
+    margin-top: 0;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);  /* Semi-transparent white line */
+}
+
+/* Optional: remove border from last item */
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.item-name {
+    color: #f5f5f5;
+}
+
+.item-price {
+    color: #f5f5f5;
+}
