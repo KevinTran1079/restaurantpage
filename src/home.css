@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url(./images/coffee-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+img{
+    height: 100vh;
+    width: auto;
+}
+
+
+
+
+
+nav {
+    display: flex;
+    align-items: center;  /* This centers items vertically */
+    text-align: center;
+    justify-content: left;
+    gap: 30px;
+    height: 100px;  /* Add a specific height to your navbar */
+}
+
+button{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    min-height: 50vh;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 30px;
+    font-size: 2rem;
+    background: linear-gradient(to right, #8B4513, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    color: #f5f5f5;  /* Light color for visibility */
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+}

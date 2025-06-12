@@ -1,1 +1,3 @@
-alert('hello from index.js');
+import createHome from './home';
+createHome();
+
