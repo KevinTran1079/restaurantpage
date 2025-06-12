@@ -1,5 +1,7 @@
 import createHome from './home';
 import createMenu from './menu';
+import createAbout from './about';
+import createContact from './contact';
 
 const contentBox = document.getElementById("content");
 
@@ -21,6 +23,7 @@ homeBtn.addEventListener("click", () => {
 aboutBtn.addEventListener("click", () => {
     clearHTML();
     createAbout();
+    
 });
 
 menuBtn.addEventListener("click", () => {
@@ -29,7 +32,8 @@ menuBtn.addEventListener("click", () => {
 });
 
 contactBtn.addEventListener("click", () => {
-    
+    clearHTML();
+    createContact();
 });
 
 createHome();

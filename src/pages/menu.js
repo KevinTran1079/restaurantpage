@@ -34,6 +34,12 @@ const createAbout = () => {
 
     const drinkList = document.createElement("ul");
     drinkList.classList.add("drinkList");
+
+    const eveningSnackList = document.createElement("ul");
+    eveningSnackList.classList.add("eveningSnackList");
+
+    const eveningDrinksList = document.createElement("ul");
+    eveningDrinksList.classList.add("eveningDrinksList");
     
     const menuItems = [
         { name: "Drip Coffee", price: "$3.50" },
@@ -69,6 +75,62 @@ const createAbout = () => {
     });
 
     drinks.appendChild(drinkList);
+
+    const eveningSnackPriceList = [
+        { name: "sweet & spicy roasted nuts", price: "$5" },
+        { name: "HERBY marinated olives", price: "$10" },
+        { name: "honey whipped goat cheese", price: "$12" },
+        { name: "roasted tandoori chickpeas", price: "$12" },
+        { name: "pulled pork sandwich", price: "$12" },
+        { name: "DESSERTS (selection changes)", price: "$7" }
+    ]
+
+    eveningSnackPriceList.forEach(item => {
+        const li = document.createElement("li");
+        li.classList.add("menu-item");
+        
+        const nameSpan = document.createElement("span");
+        nameSpan.classList.add("item-name");
+        nameSpan.textContent = item.name;
+        
+        const priceSpan = document.createElement("span");
+        priceSpan.classList.add("item-price");
+        priceSpan.textContent = item.price;
+        
+        li.appendChild(nameSpan);
+        li.appendChild(priceSpan);
+        eveningSnackList.appendChild(li);
+    });
+
+    eveningSnacks.appendChild(eveningSnackList);
+
+    const eveningDrinksPriceList = [
+        { name: "red wine 6oz", price: "$11.50" },
+        { name: "white wine 6oz", price: "$11.50" },
+        { name: "cocktails", price: "$12.50" },
+        { name: "beer", price: "$7.50" },
+        { name: "bottle of wine + corkage", price: "$10" }
+    ]
+
+        eveningSnackPriceList.forEach(item => {
+        const li = document.createElement("li");
+        li.classList.add("menu-item");
+        
+        const nameSpan = document.createElement("span");
+        nameSpan.classList.add("item-name");
+        nameSpan.textContent = item.name;
+        
+        const priceSpan = document.createElement("span");
+        priceSpan.classList.add("item-price");
+        priceSpan.textContent = item.price;
+        
+        li.appendChild(nameSpan);
+        li.appendChild(priceSpan);
+        eveningDrinksList.appendChild(li);
+    });
+
+    eveningDrinks.appendChild(eveningDrinksList);
+
 };
 
 export default createAbout;
